@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulful Kitchen — Moments &amp; More</title>
+  <meta name="description" content="Soulful Kitchen is a cloud kitchen delivering effortless meals that bring people together for events, corporate plans, and unforgettable takeout moments.">
+  <link rel="preload" href="assets/placeholder-hero.mp4" as="video" type="video/mp4">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-brand">
+      <img src="assets/logo.svg" alt="Soulful Kitchen logo" class="site-logo">
+      <span class="brand-text">Soulful Kitchen</span>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#booking">Booking</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--outline" href="#booking">Book a call</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <div class="hero-video-wrapper">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.svg">
+            <source src="assets/placeholder-hero.webm" type="video/webm">
+            <source src="assets/placeholder-hero.mp4" type="video/mp4">
+            <img src="assets/hero-poster.svg" alt="Soulful Kitchen event catering preview">
+          </video>
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker">Moments &amp; More</p>
+        <h1 id="hero-title" class="hero-title">Effortless Meals That Bring People Together</h1>
+        <p class="hero-subhead">We’re a cloud kitchen crafting joyful, memorable meals for events, corporate plans and takeout — soulful food and seamless service that connects people.</p>
+        <p class="hero-trust">Trusted by teams across events &amp; corporate clients — local sourcing, seamless delivery</p>
+        <div class="hero-cta">
+          <a class="btn btn--primary" href="#booking" data-scroll="true">Book a call</a>
+          <button class="btn btn--outline js-open-video" type="button" data-youtube-id="YOUTUBE_VIDEO_ID">Watch video</button>
+        </div>
+        <blockquote class="hero-testimonial">“Soulful Kitchen took care of every detail — the food, the timing, and our guests kept raving.” <cite>— William, Product Team</cite></blockquote>
+      </div>
+      <aside class="hero-lead" aria-label="Quick booking form">
+        <form id="quickLeadForm" class="lead-form" novalidate>
+          <h2 class="lead-title">Plan a soulful spread</h2>
+          <p class="lead-copy">Get a proposal tailored to your occasion.</p>
+          <label class="form-label" for="lead-name">Name</label>
+          <input class="form-input" type="text" id="lead-name" name="name" required>
+
+          <label class="form-label" for="lead-phone">Phone</label>
+          <input class="form-input" type="tel" id="lead-phone" name="phone" required>
+
+          <label class="form-label" for="lead-email">Email</label>
+          <input class="form-input" type="email" id="lead-email" name="email" required>
+
+          <label class="form-label" for="lead-date">Date</label>
+          <input class="form-input" type="date" id="lead-date" name="date">
+
+          <label class="form-label" for="lead-guests">Guests</label>
+          <input class="form-input" type="number" id="lead-guests" name="guests" min="1" placeholder="50">
+
+          <button class="btn btn--primary btn--full" type="submit">Get a proposal</button>
+        </form>
+      </aside>
+    </section>
+
+    <section id="about" class="section section--about">
+      <div class="container">
+        <h2 class="section-title">Soulful from prep to plate</h2>
+        <p>We obsess over the details so you don’t have to. From curated menus and allergen-aware planning to punctual drop-offs and on-site coordination, Soulful Kitchen ensures every gathering is nourishing, effortless, and memorable.</p>
+        <ul class="about-list">
+          <li>Seasonal menus built with local farmers and specialty purveyors.</li>
+          <li>Dedicated event producers who coordinate logistics and dietary needs.</li>
+          <li>Scalable kitchen operations designed for intimate dinners or 500+ guest celebrations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="booking" class="section section--booking" aria-labelledby="booking-title">
+      <div class="container">
+        <h2 id="booking-title" class="section-title">Book a call and tasting</h2>
+        <p class="section-subhead">Tell us about your event and we’ll craft a soulful menu proposal within one business day.</p>
+        <form id="bookingForm" class="booking-form" action="form-handler.php" method="post" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="full-name">Full name *</label>
+              <input class="form-input" type="text" id="full-name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">Phone *</label>
+              <input class="form-input" type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="event-date">Event date</label>
+              <input class="form-input" type="date" id="event-date" name="date">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="event-location">Event location</label>
+              <input class="form-input" type="text" id="event-location" name="location" placeholder="Venue or address">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="guests">Number of guests</label>
+              <input class="form-input" type="number" id="guests" name="guests" min="1" placeholder="150">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="referral">How did you hear about Soulful Kitchen?</label>
+              <select class="form-input" id="referral" name="referral">
+                <option value="">Select an option</option>
+                <option value="referral">Friend or colleague</option>
+                <option value="social">Social media</option>
+                <option value="search">Search engine</option>
+                <option value="event">Event planner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="source">Service type</label>
+              <select class="form-input" id="source" name="source">
+                <option value="">Select service</option>
+                <option value="corporate">Corporate meal plans</option>
+                <option value="event">Event catering</option>
+                <option value="takeout">Signature takeout</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="notes">Notes / special requests</label>
+            <textarea class="form-input" id="notes" name="notes" rows="4" placeholder="Let us know what would make the experience unforgettable."></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Book a call</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Let’s plan something soulful</h2>
+        <p>Email <a href="mailto:hello@soulfulkitchen.example">hello@soulfulkitchen.example</a> or call <a href="tel:+1234567890">(123) 456-7890</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Soulful Kitchen. Crafted with heart and hospitality.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" type="button" aria-label="Close video" data-modal-close>&times;</button>
+      <h2 id="videoModalTitle" class="modal__title">Soulful Kitchen in action</h2>
+      <div class="modal__body">
+        <div class="video-embed" id="videoEmbed" data-youtube-id="YOUTUBE_VIDEO_ID"></div>
+      </div>
+    </div>
+  </div>
+
+  <template id="toastTemplate">
+    <div class="toast" role="status" aria-live="polite"></div>
+  </template>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

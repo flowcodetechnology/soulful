@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152B25" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#2D6254" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="#1a1f1d"/>
+  <rect width="800" height="1200" fill="url(#overlay)"/>
+  <text x="64" y="360" font-family="'Segoe UI', sans-serif" font-size="72" fill="#FCD1A7" font-weight="700">Soulful Kitchen</text>
+  <text x="64" y="470" font-family="'Segoe UI', sans-serif" font-size="40" fill="#FE8731">Effortless Meals</text>
+  <text x="64" y="540" font-family="'Segoe UI', sans-serif" font-size="28" fill="#ffffff" opacity="0.85">Video preview</text>
+</svg>
